@@ -1,0 +1,294 @@
+/* 
+COLORES
+.color1 { #bd9941 };
+.color2 { #e9e5cb };
+.color3 { #1a1509 };
+.color4 { #ada582 };
+.color5 { #acb4c9 };
+.color6 { #d7d2af };
+*/
+
+
+/* BODY CSS */
+body {
+    font-family: 'Times New Roman', Times, serif;
+	background-color: #ada582;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+
+/* HEADER CSS */
+header {
+    background-color: #bd9941;
+    text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+/* H1, H2, H3 */
+
+h1, h2, h3 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	color: #e9e5cb;
+	text-shadow: 1px 1px 1px #333;
+}
+
+/* NAV CSS */
+nav {
+	overflow: hidden;
+	border-bottom-left-radius: 0.1rem;
+}
+
+nav a {
+	color: #1a1509;
+	display: block;
+	padding: 14px 16px;
+	text-decoration: none;
+	text-align: center;
+	float: left;
+}
+
+nav a:hover {
+	background-color: #ada582;
+}
+
+/* IMG CSS */
+img {
+	width: 100%;
+	height: auto;
+	border-radius: 0.5rem;
+}
+
+/* FOOTER CSS */
+footer {
+	background-image: linear-gradient( 50deg, #e9e5cb 10%, #bd9941 100%);
+	color: #1a1509;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
+	border-radius: 0.5rem;
+	position: relative;
+	width: 96%;
+}
+
+/* TABLAS CSS */
+table {
+	font-family: 'Times New Roman', Times, serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #bd9941;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #bcb791;
+}
+
+
+/* DT CSS */
+dt {
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	color: #e9e5cb;
+	text-shadow: 1px 1px 1px #333;
+}
+
+/* FORMULARIO CSS */
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+input {
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+button {
+	background-color: #bd9941;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #ada582;
+}
+
+
+
+
+/* CLASES Y ID'S CSS */
+#div-tabla {
+	padding: 1%;
+	text-align: justify;
+	margin: 1%;
+	background-color: #cdc79c;
+	display: block;
+	border-radius: 0.5rem;
+}
+
+#logo {
+	width: 4.5%;
+}
+
+.h3-info {
+	font-size: 20px;
+	padding-left: 90px;
+}
+
+.div-base {
+	padding: 1%;
+	text-align: center;
+	margin: 1%;
+	background-color: #cdc79c;
+	display: block;
+	border-radius: 0.5rem;
+}
+
+.ul-footer {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.ul-footer > li {
+	color: #1a1509;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.overlay{
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	text-shadow: 1px 1px 1px #333;
+    background-image: linear-gradient( 50deg, #e9e5cb 10%, #bd9941 100%);
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+}
+
+
+/* GALERIA CSS*/
+
+.grid-container-img {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 1em;
+}
+
+  /* hover styles */
+.location-listing {
+	position: relative;
+}
+
+.location-image {
+	line-height: 0;
+	overflow: hidden;
+}
+
+.location-image img {
+	filter: blur(0px);
+	transition: filter 0.3s ease-in;
+	transform: scale(1.1);
+}
+
+.location-title {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: none;
+	z-index: 1;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity .5s;
+	background: rgba(130, 111, 30, 0.73);
+	color: white;
+	
+	/* position the text in t’ middle*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.location-listing:hover .location-title {
+	opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+	filter: blur(2px);
+}
+
+/*------------------------------------------------------------*/
+
+
+.grid-container {
+	display: grid;
+	grid-template-areas: 
+		"main main main"
+		"main main main";
+}
+
+.grid-container > div {
+	grid-area: "main";
+	padding: 1% 2% 1% 2%;
+	text-align: justify;
+	margin: 3% 1% 1% 1%;
+	background-color: #cdc79c;
+	display: block;
+	border-radius: 0.5rem;
+}
+
+.nav-overlay{
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	text-shadow: 1px 1px 1px #333;
+    background-image: linear-gradient( 50deg, #e9e5cb 10%, #bd9941 100%);
+	border-bottom-left-radius: 0.5rem ;
+	border-bottom-right-radius: 0.5rem ;
+}
+
+.img-link {
+	width: 100%;
+}
+
+.img-link:hover {
+	opacity: 0.5;
+}
